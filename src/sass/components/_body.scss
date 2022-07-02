@@ -1,3 +1,74 @@
-.qwerty {
-  fill: $red-color;
+.body-container {
+  padding-top: 20px;
+  @media (min-width: $max-mobile) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 59px;
+  }
+  @media (min-width: 1280px) {
+    padding-top: 60px;
+    max-width: 1280px;
+  }
+}
+
+.film__wrap {
+  width: 280px;
+  margin: 0 auto 20px auto;
+  overflow: hidden;
+  text-align: start;
+  @media (min-width: $max-mobile) {
+    margin: 0 32px 32px 0;
+    width: 336px;
+  }
+  @media (min-width: 1280px) {
+    margin: 0 16px 32px 0;
+  }
+}
+.film__wrap:nth-child(2n) {
+  @media (min-width: $max-mobile) and (max-width: 1280px) {
+    margin: 0 0 32px 0;
+  }
+}
+
+.film__wrap:nth-child(3n) {
+  @media (min-width: 1280px) {
+    margin: 0 0 32px 0;
+  }
+}
+.film__img {
+  width: 280px;
+  height: 402px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: aqua;
+  @media (min-width: $max-mobile) {
+    width: 336px;
+    height: 455px;
+    margin-bottom: 8px;
+  }
+  @media (min-width: $max-tablet) {
+    width: 394px;
+    height: 574px;
+    margin-bottom: 12px;
+  }
+}
+
+.film__text {
+  font-family: $fonts;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  @media (min-width: $max-tablet) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.film__name {
+  color: $black-color;
+  text-transform: uppercase;
+}
+
+.film__description {
+  color: $orange-color;
 }

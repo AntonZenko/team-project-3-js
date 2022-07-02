@@ -1,0 +1,44 @@
+.footer-container {
+    padding: 29px 0 29px 0; 
+    height: 100px;
+    @media (min-width: $max-mobile) {
+        display: flex;
+        padding: 30px 0;
+        height: 79px;
+      }
+    @media (min-width: $max-tablet) {
+        padding: 30px 0 29px 0;
+        height: 77px;
+    }
+  }
+  
+.footer {
+    background-color: $footer-background-color;
+}
+
+.footer__text {
+font-family: var(--fonts);
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+color: $footer-text-color;
+}
+.footer__text--prt1 {
+    margin-bottom: 10px;
+    @media (min-width: $max-mobile) {
+        margin-bottom: 0px;
+        margin-right: 3px;
+      }
+}
+
+.footer__icon {
+height: 12.880000114440918px;
+width: 14px;
+margin: 0 10px;
+}
+.footer__link{
+    color: $footer-text-color;
+    text-decoration: underline;
+}
+
+
